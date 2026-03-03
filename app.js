@@ -7,7 +7,7 @@ const products = [
     price: 499,
     popularity: 98,
     createdAt: "2026-02-24",
-    image: "images/brucelee.jpeg",
+    image: "brucelee.jpeg",
     description: "Premium oversized silhouette with breathable cotton blend for all-day comfort.",
     sizes: ["S", "M", "L", "XL"],
     rating: 4.8
