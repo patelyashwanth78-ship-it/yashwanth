@@ -20,7 +20,7 @@ const products = [
     price: 499,
     popularity: 92,
     createdAt: "2026-02-19",
-    image: "images/aot1.jpeg",
+    image: "aot1.jpeg",
     description: "Sharp tailored fit with wrinkle-resistant finish, ideal for office and events.",
     sizes: ["M", "L", "XL"],
     rating: 4.7
@@ -33,7 +33,7 @@ const products = [
     price: 499,
     popularity: 88,
     createdAt: "2026-01-30",
-    image: "images/zoro2.jpeg",
+    image: "zoro2.jpeg",
     description: "Lightweight striped cotton shirt for effortless everyday style.",
     sizes: ["S", "M", "L"],
     rating: 4.5
@@ -46,7 +46,7 @@ const products = [
     price: 499,
     popularity: 95,
     createdAt: "2026-02-27",
-    image: "images/zoro1.jpeg",
+    image: "zoro1.jpeg",
     description: "Contemporary print with premium drape and soft-touch fabric.",
     sizes: ["S", "M", "L", "XL"],
     rating: 4.9
@@ -59,7 +59,7 @@ const products = [
     price: 499,
     popularity: 84,
     createdAt: "2026-01-12",
-    image: "images/luffy3.jpeg",
+    image: "luffy3.jpeg",
     description: "Smart utility pockets with structured yet flexible fit.",
     sizes: ["M", "L", "XL"],
     rating: 4.4
@@ -72,7 +72,7 @@ const products = [
     price: 499,
     popularity: 90,
     createdAt: "2026-02-06",
-    image: "images/luffy2.jpeg",
+    image: "luffy2.jpeg",
     description: "Minimal design language with elevated details and slim modern fit.",
     sizes: ["S", "M", "L", "XL"],
     rating: 4.6
@@ -86,7 +86,7 @@ const products = [
   price: 499,
   popularity: 100,
   createdAt: "2026-03-03",
-  image: "images/luffy1.jpeg",
+  image: "luffy1.jpeg",
   description: "Premium streetwear shirt.",
   sizes: ["M", "L", "XL"],
   rating: 10.0
