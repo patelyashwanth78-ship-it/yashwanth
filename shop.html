@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop premium stylish shirts at UrbanThreads." />
+  <meta name="keywords" content="shirt shop, formal shirts, casual shirts, oversized shirts" />
+  <title>UrbanThreads | Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">UrbanThreads</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount" class="cart-pill">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-title reveal">
+      <h1>Shop Shirts</h1>
+      <p>Find your fit from our premium collection.</p>
+    </section>
+
+    <section class="shop-layout">
+      <aside class="filters reveal">
+        <h3>Filters</h3>
+        <label>Category
+          <select id="filterCategory">
+            <option value="All">All</option>
+            <option value="Casual">Casual</option>
+            <option value="Formal">Formal</option>
+            <option value="Oversized">Oversized</option>
+            <option value="Printed">Printed</option>
+          </select>
+        </label>
+        <label>Size
+          <select id="filterSize">
+            <option value="All">All</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </label>
+        <label>Color
+          <select id="filterColor">
+            <option value="All">All</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+          </select>
+        </label>
+        <label>Max Price
+          <input type="range" id="filterPrice" min="1000" max="4000" step="100" value="4000" />
+          <span id="priceValue">Up to Rs. 4000</span>
+        </label>
+      </aside>
+
+      <div class="products-panel reveal">
+        <div class="products-topbar">
+          <p id="productCount">0 products</p>
+          <label>Sort by
+            <select id="sortProducts">
+              <option value="popular">Popular</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </label>
+        </div>
+        <div id="shopGrid" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 UrbanThreads. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

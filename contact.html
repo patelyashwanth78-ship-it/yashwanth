@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact UrbanThreads for support and collaborations." />
+  <title>UrbanThreads | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">UrbanThreads</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount" class="cart-pill">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-title reveal">
+      <h1>Contact Us</h1>
+      <p>We would love to hear from you.</p>
+    </section>
+
+    <section class="contact-layout reveal">
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="contactMessage" class="form-message" aria-live="polite"></p>
+      </form>
+      <aside class="contact-card">
+        <h3>Reach Us</h3>
+        <p>Email: <a href="mailto:support@urbanthreads.com">support@urbanthreads.com</a></p>
+        <p>Instagram: <a href="#">@urbanthreads</a></p>
+        <p>Facebook: <a href="#">UrbanThreads</a></p>
+        <p>X: <a href="#">@urbanthreads</a></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 UrbanThreads. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cart and secure checkout at UrbanThreads." />
+  <title>UrbanThreads | Cart & Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">UrbanThreads</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html" class="active">Cart <span id="cartCount" class="cart-pill">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-title reveal">
+      <h1>Cart & Checkout</h1>
+      <p>Review your order and complete checkout securely.</p>
+    </section>
+
+    <section class="checkout-layout">
+      <div class="cart-panel reveal">
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+      </div>
+
+      <aside class="checkout-panel reveal">
+        <h3>Order Summary</h3>
+        <p>Subtotal: <strong id="cartSubtotal">Rs. 0</strong></p>
+        <label>Coupon
+          <input type="text" id="couponCode" placeholder="SAVE10" />
+        </label>
+        <button id="applyCoupon" class="btn btn-ghost">Apply Coupon</button>
+        <p id="couponMessage" class="form-message"></p>
+        <p>Total: <strong id="cartTotal">Rs. 0</strong></p>
+
+        <form id="checkoutForm" class="checkout-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Address" required />
+          <input type="text" placeholder="City" required />
+          <input type="text" placeholder="Postal Code" required />
+          <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+        <p id="checkoutMessage" class="form-message" aria-live="polite"></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 UrbanThreads. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

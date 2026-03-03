@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UrbanThreads - Premium stylish shirts for every occasion." />
+  <meta name="keywords" content="UrbanThreads, stylish shirts, men's fashion, premium shirts" />
+  <title>UrbanThreads | Wear Your Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">UrbanThreads</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount" class="cart-pill">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content reveal">
+        <p class="eyebrow">New Season Drop</p>
+        <h1>Wear Your Style</h1>
+        <p>Statement shirts for bold days and late nights. Crafted for comfort, styled for impact.</p>
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+          <a href="about.html" class="btn btn-ghost">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="section-head">
+        <h2>Featured Shirts</h2>
+        <a href="shop.html" class="text-link">View all</a>
+      </div>
+      <div id="featuredGrid" class="product-grid"></div>
+    </section>
+
+    <section class="section section-alt reveal">
+      <div class="container">
+        <div class="section-head center">
+          <h2>Shop by Category</h2>
+        </div>
+        <div class="category-grid">
+          <a href="shop.html?category=Casual" class="category-card">Casual</a>
+          <a href="shop.html?category=Formal" class="category-card">Formal</a>
+          <a href="shop.html?category=Oversized" class="category-card">Oversized</a>
+          <a href="shop.html?category=Printed" class="category-card">Printed</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="section-head center">
+        <h2>What Customers Say</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p>"The fit is perfect and the fabric feels luxe. My new favorite shirt brand."</p>
+          <h4>Arjun M.</h4>
+        </article>
+        <article class="testimonial-card">
+          <p>"UrbanThreads makes casual look premium. Fast delivery and clean packaging too."</p>
+          <h4>Ravi S.</h4>
+        </article>
+        <article class="testimonial-card">
+          <p>"Bought two printed shirts and got compliments instantly. Worth every rupee."</p>
+          <h4>Neha K.</h4>
+        </article>
+      </div>
+    </section>
+
+    <section class="section newsletter reveal">
+      <div class="container newsletter-box">
+        <h2>Get 10% Off Your First Order</h2>
+        <p>Join our newsletter for drops, offers, and styling tips.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; 2026 UrbanThreads. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
