@@ -20,7 +20,7 @@ const products = [
     price: 499,
     popularity: 92,
     createdAt: "2026-02-19",
-    image: "aot1",
+    image: "aot1.jpeg",
     description: "Sharp tailored fit with wrinkle-resistant finish, ideal for office and events.",
     sizes: ["M", "L", "XL"],
     rating: 4.7
